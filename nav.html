@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>HTML — Structuring the web</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a></li>
+        <li><a class="nav-link" href="#metadata">Metadata</a></li>
+        <li><a class="nav-link" href="#html_fundamentals">HTML Fundamentals</a></li>
+        <li><a class="nav-link" href="#hyperlinks">Hyperlinks</a></li>
+        <li><a class="nav-link" href="#website_structure">Document and website structure</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_to_HTML">
+        <header>Introduction to HTML</header>
+        <article>
+          <p>
+            HTML (Hypertext Markup Language) is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on. For example, consider the following line of text:
+          </p>
+
+          <p>
+            Tags in HTML are not case-sensitive. This means they can be written in uppercase or lowercase. For example, a <code> &lt;<strong>title</strong>&gt;</code> and it will work. However, it is best practice to write all tags in lowercase for consistency and readability.
+          </p>
+          <h4>The anatomy of our element is:</h4>
+          <ul>
+            <li>
+              The opening tag: This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.
+            </li>
+            <li>
+              The content: This is the content of the element. In this example, it is the paragraph text.
+            </li>
+             <li>
+              The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="metadata">
+        <header>Metadata</header>
+        <article>
+          <p>
+            The head of an HTML document is the part that is not displayed in the web browser when the page is loaded. It contains information such as the page <code>title</code>, links to CSS (if you choose to style your HTML content with CSS), links to custom favicons, and other metadata (data about the HTML, such as the author, and important keywords that describe the document). Web browsers use information contained in the head to render the HTML document correctly. In this article we'll cover all of the above and more, in order to give you a good basis for working with markup.
+          </p>
+          <h4>Many <code>meta</code> elements include name and content attributes:</h4>
+          <ul>            
+            <li>
+              <code>name</code> specifies the type of meta element it is; what type of information it contains.
+            </li>
+            <li>
+              <code>content</code> specifies the actual meta content.
+            </li>
+            <li>
+            For example: <code>meta name="twitter:title" content="Mozilla Developer Network"</code>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="html_fundamentals">
+        <header>HTML Fundamentals</header>
+        <article>
+          <p>
+            One of HTML's main jobs is to give text structure so that a browser can display an HTML document the way its developer intends. This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.
+          </p>
+          <h4>Why do we need structure?</h4>
+          <p>
+            To answer this question, let's take a look at text-start.html—the starting point of our running example for this article (a nice hummus recipe). You should save a copy of this file on your local machine, as you'll need it for the exercises later on. This document's body currently contains multiple pieces of content. They aren't marked up in any way, but they are separated with line breaks (Enter/Return pressed to go onto the next line).
+          </p>
+          <h4>Why do we need semantics?</h4>
+          <p>
+            Semantics are relied on everywhere around us—we rely on previous experience to tell us what the function of an everyday object is; when we see something, we know what its function will be. So, for example, we expect a red traffic light to mean "stop," and a green traffic light to mean "go." Things can get tricky very quickly if the wrong semantics are applied. (Do any countries use red to mean "go"? We hope not.)
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="hyperlinks">
+        <header>Hyperlinks</header>
+        <article>
+          <p>
+          Hyperlinks are one of the most exciting innovations the Web has to offer. They've been a feature of the Web since the beginning, and are what makes the Web a web. Hyperlinks allow us to link documents to other documents or resources, link to specific parts of documents, or make apps available at a web address. Almost any web content can be converted to a link so that when clicked or otherwise activated the web browser goes to another web address (URL).
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="website_structure">
+        <header>Document and website structure</header>
+        <p>
+          In addition to defining individual parts of your page (such as "a paragraph" or "an image"), HTML also boasts a number of block level elements used to define areas of your website (such as "the header", "the navigation menu", "the main content column"). This article looks into how to plan a basic website structure, and write the HTML to represent this structure.
+        </p>
+        <h4>Basic sections of a document</h4>
+        <p>
+          Webpages can and will look pretty different from one another, but they all tend to share similar standard components, unless the page is displaying a fullscreen video or game, is part of some kind of art project, or is just badly structured:
+        </p>
+        <blockquote><strong>header:</strong>
+        <p>
+          Usually a big strip across the top with a big heading, logo, and perhaps a tagline. This usually stays the same from one webpage to another.
+        </p>
+          </blockquote>
+        <blockquote><strong>navigation bar:</strong>
+        <p>
+          Links to the site's main sections; usually represented by menu buttons, links, or tabs. Like the header, this content usually remains consistent from one webpage to another — having inconsistent navigation on your website will just lead to confused, frustrated users. Many web designers consider the navigation bar to be part of the header rather than an individual component, but that's not a requirement; in fact, some also argue that having the two separate is better for accessibility, as screen readers can read the two features better if they are separate.
+        </p>
+          </blockquote>
+        <blockquote><strong>main content:</strong>
+        <p>
+          A big area in the center that contains most of the unique content of a given webpage, for example, the video you want to watch, or the main story you're reading, or the map you want to view, or the news headlines, etc. This is the one part of the website that definitely will vary from page to page!
+        </p>
+          </blockquote>
+        <blockquote><strong>sidebar:</strong>
+        <p>
+          Some peripheral info, links, quotes, ads, etc. Usually, this is contextual to what is contained in the main content (for example on a news article page, the sidebar might contain the author's bio, or links to related articles) but there are also cases where you'll find some recurring elements like a secondary navigation system.
+          </blockquote>
+        <blockquote><strong>footer:</strong>
+        <p>
+          A strip across the bottom of the page that generally contains fine print, copyright notices, or contact info. It's a place to put common information (like the header) but usually, that information is not critical or secondary to the website itself. The footer is also sometimes used for SEO purposes, by providing links for quick access to popular content.
+        </p>
+          </blockquote>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+             This page contains documentation taken from 
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+                target="_blank" style="color: #ff8906;"
+                >MDN Web Docs.</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
